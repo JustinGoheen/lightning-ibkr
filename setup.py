@@ -20,9 +20,9 @@ rootdir = Path(__file__).parent
 long_description = (rootdir / "README.md").read_text()
 
 setup(
-    name="{ component_name }",
+    name="supalitfs",
     package_dir={"": "src"},
-    packages=["{ component_name }"],
+    packages=["supalitfs"],
     version="0.0.1",
     description="",
     long_description=long_description,
