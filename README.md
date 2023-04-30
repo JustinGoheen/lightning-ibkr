@@ -77,9 +77,9 @@ The current `ib_port` setting in `mes_agent.core.fetch.FetchWork` defaults to th
 Once the above is complete, do the following in terminal:
 
 ```bash
-python3 app.py
+ibagent fetch-data
 ```
 
 So long as the install is correct, running the above will display the following in terminal:
 
-![](docs/assets/data_fetching.png)
+![](docs/assets/fetch_data.png)
