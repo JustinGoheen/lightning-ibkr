@@ -1,4 +1,4 @@
-# Lightning MES
+# Lightning IBKR
 
 <!-- # Copyright Justin R. Goheen.
 #
@@ -15,3 +15,5 @@
 # limitations under the License. -->
 
 This is repo enables the creation of artificially intelligent trading agents using Lightning AI's PyTorch Lightning, Fabric, and TorchMetrics. The market and data broker is Interactive Brokers – users must have an IBKR Pro account and be subscribed to the correct data. 
+
+MES (SPX micro e-mini) is used in examples.
