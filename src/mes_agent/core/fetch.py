@@ -168,7 +168,6 @@ class FetchWork:
         rprint(f"[{dt.now().time()}] SAVING")
         self._store_data_locally()
         rprint(f"[{dt.now().time()}] STOPPING")
-        self.stop()
 
     def stop(self):
         self._ib.disconnect()

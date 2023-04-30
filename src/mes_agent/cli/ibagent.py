@@ -12,7 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from mes_agent.core.fetch import FetchWork
+import click
 
-app = FetchWork()
-app.run()
+
+@click.group()
+def main() -> None:
+    pass
+
+
+@main.command("fetch-data")
+def fetch_data() -> None:
+    from mes_agent.core.fetch import FetchWork
+
+    app = FetchWork()
+    app.run()
+    app.stop()
