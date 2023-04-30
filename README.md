@@ -1,4 +1,4 @@
-# Python Package and Lightning Component Template
+# Lightning MES
 
 <!-- # Copyright Justin R. Goheen.
 #
@@ -14,4 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License. -->
 
-This is a Lightning AI App that fetches historical equity futures data from IBKR and stores that data in Supabase.
+This is repo enables the creation of artificially intelligent trading agents using Lightning AI's PyTorch Lightning, Fabric, and TorchMetrics. The market and data broker is Interactive Brokers – users must have an IBKR Pro account and be subscribed to the correct data. 
