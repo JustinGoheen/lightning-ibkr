@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-from supalitfs.core.fetch import FetchWork
+from mes_agent.core.fetch import FetchWork
 
 app = FetchWork()
 

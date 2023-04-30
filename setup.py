@@ -20,9 +20,9 @@ rootdir = Path(__file__).parent
 long_description = (rootdir / "README.md").read_text()
 
 setup(
-    name="supalitfs",
+    name="mes_agent",
     package_dir={"": "src"},
-    packages=["supalitfs"],
+    packages=["mes_agent"],
     version="0.0.1",
     description="",
     long_description=long_description,

@@ -24,7 +24,7 @@ import pandas as pd
 from rich import print as rprint
 from rich.progress import Progress
 
-from supalitfs.utilities.front_month import EquityFutureFrontMonth
+from mes_agent.utilities.front_month import EquityFutureFrontMonth
 
 
 class FetchWork:
