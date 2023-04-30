@@ -12,9 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 from mes_agent.core.fetch import FetchWork
 
 app = FetchWork()
-
 app.run()
