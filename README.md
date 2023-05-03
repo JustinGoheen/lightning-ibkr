@@ -18,6 +18,8 @@ This is repo enables the creation of artificially intelligent trading agents usi
 
 [MES](https://www.cmegroup.com/markets/equities/sp/micro-e-mini-sandp-500.html) (SPX micro e-mini) is used in examples.
 
+> learn more about futures trading on CME Group's [free, official education portal](official)
+
 ## IBKR Accounts
 
 If you are already an IBKR customer, you will need to be on the "Pro" plan. If you aren't already a client, here is the link for a demo account https://www.interactivebrokers.com/en/trading/free-trial.php.
@@ -93,3 +95,18 @@ ibagent fetch-data
 So long as the install is correct, running the above will display the following in terminal:
 
 ![](docs/assets/fetch_data.png)
+
+## Additional Reading
+
+### PyTorch
+
+1. Deep Learning with PyTorch, Stevens et al
+2. Machine Learning with PyTorch and Scikit-Learn, Raschka et al
+
+### Algorithmic Trading
+
+Each of the books below are by Dr. Yves Hilpisch:
+
+1. Financial Theory with Python
+2. Python for Algorithmic Trading
+3. Artificial Intelligence in Finance
