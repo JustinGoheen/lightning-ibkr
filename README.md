@@ -43,9 +43,9 @@ pip install -e .
 
 The instructions shown above will install the base requirements, those requirements are:
 
-- Lightning: PyTorch Lightning, TorchMetrics, Fabric
+- Lightning: [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/), [TorchMetrics](https://torchmetrics.readthedocs.io/en/stable/), [Lightning Fabric](https://lightning.ai/docs/fabric/stable/)
 - PyTorch
-- ib_insync: highly recommended third party framework for IBKR API
+- [ib_insync](https://github.com/erdewit/ib_insync): highly recommended third party framework for IBKR API
 - pandas
 - pyarrow: creating parquet files, my preferred file format over CSV
 - supabase: an open source data storage provider for storage buckets and PostgreSQL
@@ -72,11 +72,11 @@ pre-commit install
 
 The Nixtla suite of timeseries forecasting frameworks will be used during the machine learning phase of this project. The Nixtla suite consists of:
 
-- statsforecast
-- neuralforecast
-- mlforecast
-- hierarchicalforecast
-- tsfeatures
+- [statsforecast](https://github.com/Nixtla/statsforecast)
+- [neuralforecast](https://github.com/Nixtla/neuralforecast)
+- [mlforecast](https://github.com/Nixtla/mlforecast)
+- [hierarchicalforecast](https://github.com/Nixtla/hierarchicalforecast)
+- [tsfeatures](https://github.com/Nixtla/tsfeatures)
 
 ## Running the App
 
