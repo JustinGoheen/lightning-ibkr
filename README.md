@@ -20,6 +20,15 @@ This is repo enables the creation of artificially intelligent trading agents usi
 
 > learn more about futures trading on CME Group's [free, official education portal](official)
 
+## High Level Roadmap
+
+- [x] fetch data
+- [ ] feature engineering
+- [ ] model selection
+- [ ] hyperparameter optimization
+- [ ] train
+- [ ] write trading agent
+
 ## IBKR Accounts
 
 If you are already an IBKR customer, you will need to be on the "Pro" plan. If you aren't already a client, here is the link for a demo account https://www.interactivebrokers.com/en/trading/free-trial.php.
