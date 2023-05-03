@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License. -->
 
-This is repo enables the creation of artificially intelligent trading agents using Lightning AI's PyTorch Lightning, Fabric, and TorchMetrics. The market and data broker is Interactive Brokers – users must have an IBKR Pro account and be subscribed to the correct data.
+This is repo enables the creation of artificially intelligent trading agents using [Lightning AI](https://lightning.ai/)'s PyTorch Lightning, Fabric, and TorchMetrics, along with [Nixtla](https://www.nixtla.io/)'s timeseries forecasting frameworks. The market and data broker is [Interactive Brokers](https://www.interactivebrokers.com/en/home.php) – users must have an IBKR Pro account and be subscribed to the correct data.
 
-MES (SPX micro e-mini) is used in examples.
+[MES](https://www.cmegroup.com/markets/equities/sp/micro-e-mini-sandp-500.html) (SPX micro e-mini) is used in examples.
 
 ## IBKR Accounts
 
@@ -67,6 +67,16 @@ pip install -e ".[all]"
 # install pre-commit hooks
 pre-commit install
 ```
+
+#### Notable Extras
+
+The Nixtla suite of timeseries forecasting frameworks will be used during the machine learning phase of this project. The Nixtla suite consists of:
+
+- statsforecast
+- neuralforecast
+- mlforecast
+- hierarchicalforecast
+- tsfeatures
 
 ## Running the App
 
