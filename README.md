@@ -100,12 +100,16 @@ So long as the install is correct, running the above will display the following 
 
 ### PyTorch
 
+The books shown below will be used as references during the machine learning phase of this project.
+
 1. Deep Learning with PyTorch, Stevens et al
 2. Machine Learning with PyTorch and Scikit-Learn, Raschka et al
 
 ### Algorithmic Trading
 
-Each of the books below are by Dr. Yves Hilpisch:
+Each of the books below are by Dr. Yves Hilpisch. This series of referencess will drive examples.
+
+> The neural networks found in the texts use TensorFlow
 
 1. Financial Theory with Python
 2. Python for Algorithmic Trading
