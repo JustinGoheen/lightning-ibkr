@@ -96,6 +96,10 @@ So long as the install is correct, running the above will display the following 
 
 ![](docs/assets/fetch_data.png)
 
+## Inspecting the Data
+
+After running the app to fetch data, you can use [data-eda.ipynb](./notebooks/data-eda.ipynb) to do exploratory data analysis on the historical data.
+
 ## Additional Reading
 
 ### PyTorch
