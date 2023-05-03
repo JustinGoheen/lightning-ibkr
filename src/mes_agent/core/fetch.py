@@ -20,15 +20,41 @@ from calendar import monthrange
 from datetime import datetime as dt
 
 import ib_insync as ib
+import numpy as np
 import pandas as pd
 from rich import print as rprint
 from rich.progress import Progress
 
-from mes_agent.utilities.front_month import EquityFutureFrontMonth
+
+class EquityFutureFrontMonth:
+
+    _now = datetime.datetime.now()  # gets time-now
+    _year = str(_now.year)  # gets the year, makes the int a string
+    _month = "0" + str(_now.month) if _now.month < 10 else str(_now.month)  # gets the month, makes the int a string
+    _weekday = _now.weekday()  # gets the weekday number (0 = monday, 6 = sunday)
+    _dayofmonth = _now.day  # gets the numerical day of month
+
+    _expiry_months = ["03", "06", "09", "12"]  # months in which s&p 500 contracts expire
+
+    for expmonth in _expiry_months:
+        if _now.month <= int(
+            expmonth
+        ):  # sets the expiry month from the list if current month is less than expiry month
+            front_month = expmonth
+            break
+
+    # bool to set decision to roll
+    should_roll_to_far_expiry = (_month in _expiry_months) and (np.ceil(_dayofmonth / 7) >= 3)
+
+    # rolls to the next expiry is above bool condition is True
+    if should_roll_to_far_expiry:
+        front_month = _expiry_months[_expiry_months.index(_month) + 1 if int(_month) < 12 else 0]
+
+    expiry = "".join([str(_year), front_month])  # creates a string to pass to ibkr api to get contract
 
 
-class FetchWork:
-    """a custom LightningWork to fetch data from IBKR"""
+class FetchData:
+    """fetches data from IBKR"""
 
     def __init__(
         self,
@@ -40,7 +66,7 @@ class FetchWork:
         what_to_show: str = "Trades",
         use_rth: bool = True,
         local_host: str = "127.0.0.1",
-        port: str = "7497",
+        ib_port: str = "7497",
         datadir: str = "data",
     ):
         # init the parent class
@@ -59,7 +85,7 @@ class FetchWork:
         self.end_date_time = None
         # set API connection settings
         self.ib_host = local_host
-        self.ib_port = port
+        self.ib_port = ib_port
         self.app_id = 1001
         # create the market contract that will be requested
         self._marketcontract = ib.Future(self.market, exchange="CME", lastTradeDateOrContractMonth=self.expiry)

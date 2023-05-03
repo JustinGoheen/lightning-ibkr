@@ -22,8 +22,8 @@ def main() -> None:
 
 @main.command("fetch-data")
 def fetch_data() -> None:
-    from mes_agent.core.fetch import FetchWork
+    from mes_agent.core.fetch import FetchData
 
-    app = FetchWork()
+    app = FetchData()
     app.run()
     app.stop()
